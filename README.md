@@ -1,1 +1,4 @@
 # mask_polygon_manipulations
+This repository contains scripts that are helpful in postprocessing the instance segmentation models' output, specifically masks.
+Generally, built in method for "postprocessing" the masks is Non-maximum-suppression (NMS), which iterates over the masks, calculates the intersection over union (IoU) among them and leaves the highest prediction scored mask. However, it is not enough sometimes (depending on the tasks and nature of classes) to rely only on the result of a model as this very result might appear messy. That's why I wrote those methods to manipulate the output of these models. As a final result, it is possible to get neat and structured output. Good luck with the usage :) 
+P.S If i have time I might include the Jupyter Notebook method-by-method implementation of simple example output. But I suggest you to try it yourself for curiousity.
